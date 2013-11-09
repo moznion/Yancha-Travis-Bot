@@ -52,4 +52,4 @@ my $app = sub {
     return [500, [], ['']];
 };
 
-$bot->up($app);
+$bot->up($app, $option);
