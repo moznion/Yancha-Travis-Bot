@@ -125,6 +125,47 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test 0
       perl 5.008
+  ExtUtils-MakeMaker-6.82
+    pathname: B/BI/BINGOS/ExtUtils-MakeMaker-6.82.tar.gz
+    provides:
+      DynaLoader 6.82
+      ExtUtils::Command::MM 6.82
+      ExtUtils::Liblist 6.82
+      ExtUtils::Liblist::Kid 6.82
+      ExtUtils::MM 6.82
+      ExtUtils::MM_AIX 6.82
+      ExtUtils::MM_Any 6.82
+      ExtUtils::MM_BeOS 6.82
+      ExtUtils::MM_Cygwin 6.82
+      ExtUtils::MM_DOS 6.82
+      ExtUtils::MM_Darwin 6.82
+      ExtUtils::MM_MacOS 6.82
+      ExtUtils::MM_NW5 6.82
+      ExtUtils::MM_OS2 6.82
+      ExtUtils::MM_QNX 6.82
+      ExtUtils::MM_UWIN 6.82
+      ExtUtils::MM_Unix 6.82
+      ExtUtils::MM_VMS 6.82
+      ExtUtils::MM_VOS 6.82
+      ExtUtils::MM_Win32 6.82
+      ExtUtils::MM_Win95 6.82
+      ExtUtils::MY 6.82
+      ExtUtils::MakeMaker 6.82
+      ExtUtils::MakeMaker::Config 6.82
+      ExtUtils::MakeMaker::_version 6.82
+      ExtUtils::Mkbootstrap 6.82
+      ExtUtils::Mksymlists 6.82
+      ExtUtils::testlib 6.82
+      MM 6.82
+      MY 6.82
+      in 6.82
+    requirements:
+      Data::Dumper 0
+      DirHandle 0
+      File::Basename 0
+      File::Spec 0.8
+      Pod::Man 0
+      perl 5.006
   File-ShareDir-1.03
     pathname: A/AD/ADAMK/File-ShareDir-1.03.tar.gz
     provides:
@@ -569,11 +610,11 @@ DISTRIBUTIONS
       Test 0
       Test::More 0
       perl 5.008001
-  Yancha-Bot2-0.01
-    pathname: M/MO/MOZNION/Yancha-Bot2-0.01.tar.gz
+  Yancha-Bot2-0.02
+    pathname: M/MO/MOZNION/Yancha-Bot2-0.02.tar.gz
     provides:
       MyBuilder undef
-      Yancha::Bot2 0.01
+      Yancha::Bot2 0.02
     requirements:
       AnyEvent 0
       AnyEvent::HTTP::Request 0
