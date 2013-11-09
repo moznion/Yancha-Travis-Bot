@@ -44,7 +44,7 @@ my $config = do("$FindBin::Bin/config.pl");
 
 # Setting for host and port.
 GetOptions( \my %option, qw/host=s port=i/, );
-my $server_conf = $config->{Server};
+my $server_conf = $config->{server};
 $option{host} ||= $server_conf->{host};
 $option{port} ||= $server_conf->{port};
 unless ( $option{host} && $option{port} ) {
