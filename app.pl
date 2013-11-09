@@ -26,19 +26,6 @@ sub response {
     print "$message\n";
 }
 
-my $app = sub {
-    my $req = Plack::Request->new(shift);
-
-    if ($req->method eq 'POST' and my $payload = $req->param('payload')) {
-        my $json = decode_json($payload);
-        response($bot, $json);
-        return [200, [], ['']];
-    }
-
-    warn "[ERROR] $req\n";
-    return [500, [], ['']];
-};
-
 # Get configurations.
 my $config = do("$FindBin::Bin/config.pl");
 
@@ -52,4 +39,17 @@ unless ( $option{host} && $option{port} ) {
 }
 
 my $bot = Yancha::Bot2->new($config);
+my $app = sub {
+    my $req = Plack::Request->new(shift);
+
+    if ($req->method eq 'POST' and my $payload = $req->param('payload')) {
+        my $json = decode_json($payload);
+        response($bot, $json);
+        return [200, [], ['']];
+    }
+
+    warn "[ERROR] $req\n";
+    return [500, [], ['']];
+};
+
 $bot->up($app);
