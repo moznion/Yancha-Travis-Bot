@@ -1,3 +1,5 @@
 language: perl
 perl:
   - 5.16
+notifications:
+  webhooks: http://moznion.net/travis
