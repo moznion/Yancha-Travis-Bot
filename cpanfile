@@ -4,5 +4,5 @@ requires 'Plack::Request';
 requires 'Yancha::Bot2';
 
 on test => sub {
-        requires 'Test::More', '0.98';
+    requires 'Test::More', '0.98';
 };
