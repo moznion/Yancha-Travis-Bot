@@ -1,1 +1,1 @@
-use Plack::Request;
+requires 'Plack::Request';
