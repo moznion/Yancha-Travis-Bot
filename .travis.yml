@@ -1,0 +1,6 @@
+language: perl
+perl:
+  - 5.16
+script: "prove"
+notifications:
+  webhooks: http://moznion.net/travis
