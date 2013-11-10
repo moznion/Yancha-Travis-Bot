@@ -15,10 +15,11 @@ sub response {
     my $repos = $json->{repository};
 
     my $message = sprintf(
-        "[%s] %s (%s) %s",
-        $json->{status_message},
+        "[%s] %s (%s: %s) %s",
+        uc($json->{status_message}),
         $repos->{name},
-        $json->{commit},
+        $json->{branch},
+        substr($json->{commit}, 0, 8),
         $json->{build_url}
     );
 
