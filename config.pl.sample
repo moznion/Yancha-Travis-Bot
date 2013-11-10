@@ -7,7 +7,8 @@ use utf8;
         'host' => '0.0.0.0',
         'port' => '8080',
     },
-    'yancha_url' => 'http://yancha.hachiojipm.org:3000',
-    'tags'       => ['#TRAVIS'],
-    'bot_name'   => 'Travis Bot',
+    'yancha_url'        => 'http://yancha.hachiojipm.org:3000',
+    'tags'              => ['#TRAVIS'],
+    'bot_name'          => 'Travis Bot',
+    'profile_image_url' => 'http://pyazo.hachiojipm.org/image/your-image-path',
 };
