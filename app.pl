@@ -32,8 +32,8 @@ my $config = do("$FindBin::Bin/config.pl");
 # Setting for host and port.
 GetOptions( \my %option, qw/host=s port=i/, );
 $config->{server} = {
-    $option{host} || $config->{server}->{host};
-    $option{port} || $config->{server}->{port};
+    host => $option{host} || $config->{server}->{host},
+    port => $option{port} || $config->{server}->{port},
 };
 
 my $bot = Yancha::Bot2->new($config);
