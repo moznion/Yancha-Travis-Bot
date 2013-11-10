@@ -1,3 +1,3 @@
 #!/bin/sh
 
-carton exec -- plackup app.pl
+carton exec -- perl app.pl
