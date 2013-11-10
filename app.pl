@@ -31,12 +31,10 @@ my $config = do("$FindBin::Bin/config.pl");
 
 # Setting for host and port.
 GetOptions( \my %option, qw/host=s port=i/, );
-my $server_conf = $config->{server};
-$option{host} ||= $server_conf->{host};
-$option{port} ||= $server_conf->{port};
-unless ( $option{host} && $option{port} ) {
-    die '! Please specify host and port in config.pl';
-}
+$config->{server} = {
+    $option{host} || $config->{server}->{host};
+    $option{port} || $config->{server}->{port};
+};
 
 my $bot = Yancha::Bot2->new($config);
 my $app = sub {
@@ -52,4 +50,4 @@ my $app = sub {
     return [500, [], ['']];
 };
 
-$bot->up($app, \%option);
+$bot->up($app);
