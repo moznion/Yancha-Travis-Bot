@@ -1,6 +1,7 @@
 language: perl
 perl:
   - 5.16
+before_script: PERL_CARTON_MIRROR=http://pan.hachiojipm.org/ carton install carton
 script: "prove"
 notifications:
   webhooks: http://moznion.net/travis
