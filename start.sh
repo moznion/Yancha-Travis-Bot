@@ -1,3 +1,3 @@
 #!/bin/sh
 
-carton exec -- perl app.pl
+exec carton exec -- perl app.pl
